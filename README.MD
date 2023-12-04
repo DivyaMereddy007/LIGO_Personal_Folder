@@ -61,8 +61,8 @@ Some key advantages of transformers for this application:
 - Self-attention draws global relationships between all points in the sequence. This is useful for determining phase shifts and time-of-arrival differences critical for GW detection. Multi-head attention can learn diverse patterns.
 
 Overall, transformers show promise for gravitational wave detection due to their ability to model complex dependencies in sequential data.We leverage the power of audio transformers’ deep understanding of audio data to solve our classification problem: does a gravity wave signal exist, or not, in a signal segment?
-    - Whipher
-    - Wav2vec2
+- Whipher
+- Wav2vec2
 
 ## Whipher:
 
