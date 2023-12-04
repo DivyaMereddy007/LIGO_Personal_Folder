@@ -1,10 +1,3 @@
-![Alt text](ligo_detector_image-12.png)
-
-![Alt text](Un_cosmic_noise_image-12.png)
-
-![Alt text](Whispher_Model_image-12.png)
-
-
 # Check grading and format expect from sheet
 # Check all questions make sure you should be in a position to answer questions.
 
@@ -21,21 +14,13 @@ When GWs pass by Earth, they stretch and squeeze spacetime, differentially chang
 
 LIGO's detections provide a new spectrum to astronomy, much like radio and x-rays, opening up a new window into the observing the universe.
 
-  [<img src="ligo_detector_image-12.png" width="70%" >](https://www.youtube.com/watch?v=aEPIwEJmZyE&t=538s "LIGO")
-
-[![Video](https://img.youtube.com/vi/jXnoFqcAkQA/maxresdefault.jpg)](https://www.youtube.com/watch?v=aEPIwEJmZyE)
-
-<p align="center">
-  <img src="ligo_detector_image-12.png" alt="Alt text" width="600" height>
-</p>
-
-## Lets explore LIGO data 
-
 <p align="center">
   <a href="https://www.youtube.com/watch?v=aEPIwEJmZyE&t=538s" title="LIGO">
     <img src="ligo_detector_image-12.png" width="70%">
   </a>
 </p>
+
+## Lets explore LIGO data 
 
 Determining whether or not a gravity wave signal exists within a clip of signal from the LIGO detector is not a trivial at all.
 
@@ -43,34 +28,37 @@ The gravity wave signal is typically very short, and much smaller in magnitude t
 
 #### Lets play a game to understand LIGO data more. 
 
-    https://blackholehunter.org/game.html
-
 <p align="center">
-  <img src="image-5.png" alt="Alt text" width="700" >
+  <a href="https://blackholehunter.org/game.html" title="LIGO">
+    <img src="image-12.png" width="70%">
+  </a>
 </p>
 
 #### Data Exploration: 
 
 - There are not more events happened till now. But we can create as much data we want to create by adding noise to signal.
 
-###### Cosmic Sound?
+##### Cosmic Sound?
 
 The interference pattern from LIGO is a frequency-time signal, similar to audio data.
 
 So, we can make use of AI/ML tools developed for audio to understand this data.
 
-![Alt text](image-3.png)
+<p align="center">
+  <img src="image-13.png" alt="Alt text" width="300">
+</p>
 
-#### Un-Cosmic Noise:
+##### Un-Cosmic Noise:
 
 Although these gravity waves come from colliding massive objects, the signal is very small.
 
 This small signal gets buried deeply in the noise of the detector, along with other non-cosmic signals, like that of earthquakes, cars driving by, glitches in the detector, etc.
 
+<p align="center">
+  <img src="Un_cosmic_noise_image-12.png" alt="Alt text" width="300">
+</p>
 
-![Alt text](image-4.png)
-
-### Why Transformers Work here?
+## Why Transformers Work here?
 
 Deep Learning based classification models are famous in current stage. In particular, models trained based on CNN-based deep neural networks. These are often trained using both simulated and real gravitational waves. Most existing LIGO pipelines still rely on tried and true signal processing techniques combined with some CNN-based deep learning like PyCBC (matched filtering to identify signals in LIGO data), Coherent WaveBurst (signal reconstruction using wavelet transformations), Deep Filtering (deep CNNs to classify noise vs gravitational wave signals).
 
@@ -98,9 +86,9 @@ Model Architecture
 Application to Time Series Data like Gravitational Waves
     Adaptable to Various Data Types: The model's robustness and flexibility make it suitable for analyzing complex datasets, including non-audio time series data.
 
-![Alt text](image-5.png)
+![Alt text](Whispher_Model_image-12.png)
 
-#### Whipsher Sudo Code:
+##### Whipsher Sudo Code:
 
         Algorithm WhisperForwardPass(x):
 
@@ -133,28 +121,33 @@ Application to Time Series Data like Gravitational Waves
 
         return P
 
-###### It's Questions Time:
-        So our initial goal is to achieve classification problem. So do we need to why did we consider sequence to sequence model. Simple encoder with classification head should be enough. What we have is sequence to sequence model. Do we need to complicate the model?
+        So our initial goal is to achieve classification problem. 
+        So do we need to why did we consider sequence to sequence model. 
+        Simple encoder with classification head should be enough.
+        What we have is sequence to sequence model. 
+        Do we need to complicate the model?
 
 We can make use of the encoders of these models, which generate lower-dimensional,highly informatic representations of the audio signal. We can attach a classification head on top of it. Simple solution. 
 
-#### Model Development:
+##### Model Development:
 
 Main Idea: As the model is already trained on audio to text data, it might be able to perform well on LIGO waves detection with finetuning. Based on performance, we can go for full traning of the transformer utulzing the whipsher learning based on transfer learning concept. 
 
+<p align="center">
+  <img src="image-11.png" alt="Alt text" width="300">
+</p>
 
-![Alt text](image-11.png)
-
-#### Whisher Fine Tuning Results:
+##### Whisher Fine Tuning Results:
 
 Whisper Audio model fine-tuning shows promising results. In the initial runs, the model's loss did not decrease, but class balance (average F1 scores) has improved. Eventually, the model's losses reduced overall. 
 Test Accuracy: 81% 
 
 Next Steps: Further fine-tune the model, perhaps with mock data pretraining and advanced hyperparameter tuning. Based on the results, retrain the complete architecture.
 
-![Alt text](image-6.png)
-
-![Alt text](image-7.png)
+<p align="center">
+  <img src="image-6.png" alt="Alt text" width="300">
+  <img src="image-7.png" alt="Alt text" width="300">
+</p>
 
 ###### Wav2Vec:
 Wav2Vec2 is a self-supervised learning model that excels in speech recognition and audio processing. Key features include:
