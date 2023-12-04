@@ -4,6 +4,8 @@
 
 ![Alt text](Whispher_Model_image-12.png)
 
+[![Video](https://img.youtube.com/vi/jXnoFqcAkQA/maxresdefault.jpg)](https://www.youtube.com/watch?v=jXnoFqcAkQA)
+
 # Check grading and format expect from sheet
 # Check all questions make sure you should be in a position to answer questions.
 
