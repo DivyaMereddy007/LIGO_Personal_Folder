@@ -20,9 +20,9 @@ LIGO (Laser Interferometer Gravitational-Wave Observatory) detects GWs using the
 When GWs pass by Earth, they stretch and squeeze spacetime, differentially changing the lengths of LIGO's arms and thus the laser beam interference pattern at the time of beam recombination.
 
 LIGO's detections provide a new spectrum to astronomy, much like radio and x-rays, opening up a new window into the observing the universe.
-<p align="center">
+
 [<img src="ligo_detector_image-12.png" width="50%">](https://www.youtube.com/watch?v=aEPIwEJmZyE&t=538s "LIGO")
-</p>
+
 [![Video](https://img.youtube.com/vi/jXnoFqcAkQA/maxresdefault.jpg)](https://www.youtube.com/watch?v=aEPIwEJmZyE)
 
 <p align="center">
