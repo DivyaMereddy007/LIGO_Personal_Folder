@@ -55,7 +55,7 @@ Although these gravity waves come from colliding massive objects, the signal is 
 This small signal gets buried deeply in the noise of the detector, along with other non-cosmic signals, like that of earthquakes, cars driving by, glitches in the detector, etc.
 
 <p align="center">
-  <img src="Un_cosmic_noise_image-12.png" alt="Alt text" width="400">
+  <img src="Un_cosmic_noise_image-12.png" alt="Alt text" width="70%">
 </p>
 
 ## Why Transformers Work here?
@@ -145,8 +145,8 @@ Test Accuracy: 81%
 Next Steps: Further fine-tune the model, perhaps with mock data pretraining and advanced hyperparameter tuning. Based on the results, retrain the complete architecture.
 
 <p align="center">
-  <img src="image-6.png" alt="Alt text" width="70%">
-  <img src="image-7.png" alt="Alt text" width="70%">
+  <img src="image-6.png" alt="Alt text" width="60%">
+  <img src="image-7.png" alt="Alt text" width="60%">
 </p>
 
 ###### Wav2Vec:
