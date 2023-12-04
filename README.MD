@@ -1,5 +1,8 @@
-![Alt text](image-12.png)
+![Alt text](ligo_detector_image-12.png)
 
+![Alt text](Un_cosmic_noise_image-12.png)
+
+![Alt text](Whispher_Model_image-12.png)
 
 # Check grading and format expect from sheet
 # Check all questions make sure you should be in a position to answer questions.
