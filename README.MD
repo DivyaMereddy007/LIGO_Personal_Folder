@@ -1,3 +1,6 @@
+![Alt text](image-12.png)
+
+
 # Check grading and format expect from sheet
 # Check all questions make sure you should be in a position to answer questions.
 
