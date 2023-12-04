@@ -69,9 +69,10 @@ Overall, transformers show promise for gravitational wave detection due to their
 ## Whipher:
 
 ##### What is Whisper?
-    ASR System: Whisper is an Automatic Speech Recognition system, designed to transcribe spoken language into text.
+
+ASR System: Whisper is an Automatic Speech Recognition system, designed to transcribe spoken language into text.
 Training of Whisper
-    Extensive Training Data: Whisper was trained on a massive 680,000 hours of multilingual and multitask supervised data.
+Extensive Training Data: Whisper was trained on a massive 680,000 hours of multilingual and multitask supervised data.
 Model Architecture
     Encoder-Decoder Transformer: Utilizes a simple, yet effective, end-to-end architecture known for its efficiency in handling sequential data.
 Application to Time Series Data like Gravitational Waves
