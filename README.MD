@@ -45,7 +45,7 @@ The interference pattern from LIGO is a frequency-time signal, similar to audio 
 So, we can make use of AI/ML tools developed for audio to understand this data.
 
 <p align="center">
-  <img src="image-13.png" alt="Alt text" width="300">
+  <img src="image-13.png" alt="Alt text" width="400">
 </p>
 
 ##### Un-Cosmic Noise:
@@ -55,7 +55,7 @@ Although these gravity waves come from colliding massive objects, the signal is 
 This small signal gets buried deeply in the noise of the detector, along with other non-cosmic signals, like that of earthquakes, cars driving by, glitches in the detector, etc.
 
 <p align="center">
-  <img src="Un_cosmic_noise_image-12.png" alt="Alt text" width="300">
+  <img src="Un_cosmic_noise_image-12.png" alt="Alt text" width="400">
 </p>
 
 ## Why Transformers Work here?
@@ -134,7 +134,7 @@ We can make use of the encoders of these models, which generate lower-dimensiona
 Main Idea: As the model is already trained on audio to text data, it might be able to perform well on LIGO waves detection with finetuning. Based on performance, we can go for full traning of the transformer utulzing the whipsher learning based on transfer learning concept. 
 
 <p align="center">
-  <img src="image-11.png" alt="Alt text" width="300">
+  <img src="image-11.png" alt="Alt text" width="70%">
 </p>
 
 ##### Whisher Fine Tuning Results:
@@ -145,8 +145,8 @@ Test Accuracy: 81%
 Next Steps: Further fine-tune the model, perhaps with mock data pretraining and advanced hyperparameter tuning. Based on the results, retrain the complete architecture.
 
 <p align="center">
-  <img src="image-6.png" alt="Alt text" width="300">
-  <img src="image-7.png" alt="Alt text" width="300">
+  <img src="image-6.png" alt="Alt text" width="70%">
+  <img src="image-7.png" alt="Alt text" width="70%">
 </p>
 
 ###### Wav2Vec:
@@ -161,7 +161,7 @@ Wav2Vec2 is a self-supervised learning model that excels in speech recognition a
 ![Alt text](image-8.png)
 
 <p align="center">
-  <img src="image-8.png" alt="Alt text" width="300">
+  <img src="image-8.png" alt="Alt text" width="70%">
 </p>
 
 ###### Sudo Code:
@@ -215,7 +215,7 @@ Next Step: Further fine-tune the model tailored to LIGO dataset
 https://colab.research.google.com/drive/15LSdLoFGJaPlMloXIbw7SCKnwmI6K9xS?authuser=1#scrollTo=ggtNAe8e88bK
 
 <p align="center">
-  <img src="image-6.png" alt="Alt text" width="500">
+  <img src="image-6.png" alt="Alt text" width="70%">
 </p>
 
 ## Future Work: 
