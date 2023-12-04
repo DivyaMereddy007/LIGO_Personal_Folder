@@ -20,13 +20,13 @@ LIGO's detections provide a new spectrum to astronomy, much like radio and x-ray
   </a>
 </p>
 
-## Lets explore LIGO data 
+## Lets explore LIGO data
 
 Determining whether or not a gravity wave signal exists within a clip of signal from the LIGO detector is not a trivial at all.
 
 The gravity wave signal is typically very short, and much smaller in magnitude than noise. In fact, it’s so much smaller that the problem is practically impossible for humans!
 
-#### Lets play a game to understand LIGO data more. 
+#### Lets play a game to understand LIGO data more.
 
 <p align="center">
   <a href="https://blackholehunter.org/game.html" title="LIGO">
@@ -34,7 +34,7 @@ The gravity wave signal is typically very short, and much smaller in magnitude t
   </a>
 </p>
 
-#### Data Exploration: 
+#### Data Exploration:
 
 - There are not more events happened till now. But we can create as much data we want to create by adding noise to signal.
 
@@ -64,15 +64,15 @@ Deep Learning based classification models are famous in current stage. In partic
 
 The success of deep learning models in LIGO can be attributed to their ability to utilize raw waveform data, employ robust architectures like CNNs and transformers, leverage simulation data for pretraining, denoise to reveal weak signals, and integrate multimodal strategies combining AI with signal processing. With more data and improved models, accuracy continues to increase.
 
-Some key advantages of transformers for this application: 
-    • Robustness to noisy data. 
-    • Prior CNN-based models for GW detection struggled to capture long-range dependencies in the sequential waveform data. Attention mechanisms in transformers are well-suited for modeling these long-range relationships. The transformer encoder consisting of multiple self-attention layers. Allows relating signals across the entire timestep sequence. 
+Some key advantages of transformers for this application:
+    • Robustness to noisy data.
+    • Prior CNN-based models for GW detection struggled to capture long-range dependencies in the sequential waveform data. Attention mechanisms in transformers are well-suited for modeling these long-range relationships. The transformer encoder consisting of multiple self-attention layers. Allows relating signals across the entire timestep sequence.
     • Self-attention draws global relationships between all points in the sequence. This is useful for determining phase shifts and time-of-arrival differences critical for GW detection. Multi-head attention can learn diverse patterns.
 
-Overall, transformers show promise for gravitational wave detection due to their ability to model complex dependencies in sequential data. 
+Overall, transformers show promise for gravitational wave detection due to their ability to model complex dependencies in sequential data.
 
 We leverage the power of audio transformers’ deep understanding of audio data to solve our classification problem: does a gravity wave signal exist, or not, in a signal segment?
-    [1] Whipher 
+    [1] Whipher
     [2] Wav2vec2
 
 ## Whipher:
@@ -95,7 +95,7 @@ Application to Time Series Data like Gravitational Waves
         /* Whisper forward pass */  
 
         Input: x, sequence of token IDs
-        Output: P, sequence conditional distributions 
+        Output: P, sequence conditional distributions
 
         Hyperparameters: max_len, L, H, de, dm, df  
 
@@ -105,42 +105,42 @@ Application to Time Series Data like Gravitational Waves
                 Wl - multihead self-attention weights  
                 γ1l, β1l, γ2l, β2l - layer norm parameters  
                 Wlmlp1, blmlp1, Wlmlp2, blmlp2 - MLP parameters  
-            Wf, bf, γ, β - final projection and layer norm 
+            Wf, bf, γ, β - final projection and layer norm
             Wu - unembedding matrix
 
         steps:
             1. Get token embeddings et = We[:,x[t]] + Wp[:,t]  
-            2. X = stack(e1,...,e_maxlen) 
+            2. X = stack(e1,...,e_maxlen)
             3. For l = 1..L:
                 4. LayerNorm(X)  
-                5. Attend(X, Wl) 
+                5. Attend(X, Wl)
                 6. LayerNorm(X)
-                7. MLP(X) 
+                7. MLP(X)
             8. LayerNorm(X)
             9. Unembed(X) to get P
 
         return P
 
-        So our initial goal is to achieve classification problem. 
-        So do we need to why did we consider sequence to sequence model. 
+        So our initial goal is to achieve classification problem.
+        So do we need to why did we consider sequence to sequence model.
         Simple encoder with classification head should be enough.
-        What we have is sequence to sequence model. 
+        What we have is sequence to sequence model.
         Do we need to complicate the model?
 
-We can make use of the encoders of these models, which generate lower-dimensional,highly informatic representations of the audio signal. We can attach a classification head on top of it. Simple solution. 
+We can make use of the encoders of these models, which generate lower-dimensional,highly informatic representations of the audio signal. We can attach a classification head on top of it. Simple solution.
 
 ##### Model Development:
 
-Main Idea: As the model is already trained on audio to text data, it might be able to perform well on LIGO waves detection with finetuning. Based on performance, we can go for full traning of the transformer utulzing the whipsher learning based on transfer learning concept. 
+Main Idea: As the model is already trained on audio to text data, it might be able to perform well on LIGO waves detection with finetuning. Based on performance, we can go for full traning of the transformer utulzing the whipsher learning based on transfer learning concept.
 
 <p align="center">
-  <img src="image-11.png" alt="Alt text" width="70%">
+  <img src="image-11.png" alt="Alt text" width="60%">
 </p>
 
 ##### Whisher Fine Tuning Results:
 
-Whisper Audio model fine-tuning shows promising results. In the initial runs, the model's loss did not decrease, but class balance (average F1 scores) has improved. Eventually, the model's losses reduced overall. 
-Test Accuracy: 81% 
+Whisper Audio model fine-tuning shows promising results. In the initial runs, the model's loss did not decrease, but class balance (average F1 scores) has improved. Eventually, the model's losses reduced overall.
+Test Accuracy: 81%
 
 Next Steps: Further fine-tune the model, perhaps with mock data pretraining and advanced hyperparameter tuning. Based on the results, retrain the complete architecture.
 
@@ -160,10 +160,6 @@ Wav2Vec2 is a self-supervised learning model that excels in speech recognition a
 
 ![Alt text](image-8.png)
 
-<p align="center">
-  <img src="image-8.png" alt="Alt text" width="70%">
-</p>
-
 ###### Sudo Code:
 
         Algorithm Wav2Vec2ForwardPass(x):
@@ -176,11 +172,11 @@ Wav2Vec2 is a self-supervised learning model that excels in speech recognition a
         Hyperparameters: L, H, df, dm, dv  
 
         Parameters θ:
-            f - feature encoder layers 
+            f - feature encoder layers
             Wq, Wk, Wv, Wo - multihead attention weights
-            γ1, β1, γ2, β2 - layer norm parameters 
+            γ1, β1, γ2, β2 - layer norm parameters
             Wmlp1, blmlp1, Wmlp2, blmlp2 - MLP parameters
-            Wf, bf, γ, β - final projection layer norm 
+            Wf, bf, γ, β - final projection layer norm
             Wu - unembedding matrix
 
         Steps:
@@ -188,15 +184,15 @@ Wav2Vec2 is a self-supervised learning model that excels in speech recognition a
             2. q = gumbel_quantize(z) # quantized targets
             3. Z = LayerNorm(z)  
             4. for l = 1..L:  
-                5.   Attend(Z, Wl) 
-                6.   LayerNorm(Z) 
+                5.   Attend(Z, Wl)
+                6.   LayerNorm(Z)
                 7.   MLP(Z)
             8. LayerNorm(Z)  
             9. Unembed(Z) to get P
 
         return P
-               
-        
+
+
 ###### Results
 
 Our latest LIGO training on the DGX system has produced some promising results:
@@ -206,46 +202,48 @@ Steadily decrease in training loss as epochs iterate
 
 Next Step: Further fine-tune the model tailored to LIGO dataset
 
-![Alt text](image-9.png)
-
-![Alt text](image-10.png)
-
+<p align="center">
+  <img src="image-9.png" alt="Alt text" width="60%">
+  <img src="image-10.png" alt="Alt text" width="60%">
+</p>
 
 ## Code Demonstration
 https://colab.research.google.com/drive/15LSdLoFGJaPlMloXIbw7SCKnwmI6K9xS?authuser=1#scrollTo=ggtNAe8e88bK
 
-<p align="center">
-  <img src="image-6.png" alt="Alt text" width="70%">
-</p>
+## Critical Analysis:
 
-## Future Work: 
+###### Key Takeaways:
+Our work shows signs of effective learning from the model.
 
-WHISPER and wav2vec2 able to learn with some of the features in the gravity wave data from just fine tuning. Great news considering the difficulty of transferring a human speech task ⮕ gravity wave task (they’re really not the same thing!)
+###### Limitations:
+
+LIGO models should be trained on simulated data and tested on real data. As the noise in the LIGO data changes everytime LIGO go for more sensitive detectors. Training on real data can overfit the model for that particular noise.
+
+Wav2Vec model is only trained on 1k records.
+
+## Future Work:
+
+WHISPER and wav2vec2 able to learn with some of the features in the gravity wave data from fine tuning. Considering the difficulty of transferring a human speech task to gravity wave task (they’re really not the same thing!), the results are great.
 
 This is great for our next steps, as it shows that audio model architectures that have been utilized for human speech are promising choices for other audio-like applications.
 
-So what’s next?
+##### what’s next?
 
-Continue training these models to get the best-possible fine-tuned results. The results shown here are still relatively preliminary, as proper fine-tuning is computationally expensive. When we regain access to more powerful machines, we will be able to finalize the results shown here.
+Continue training these models to get the best-possible fine-tuned results. The results shown here are still relatively preliminary, advanced deep learning optimization techniques, new and large training data collection methods(Simulated data) can boost the tuning performance.
+
+Can continue with finetuning (retraining) complete model instead of freezing few layes to boost the performance.
 
 Build a foundational model for LIGO data. A foundational model on LIGO data could be applied to a variety of downstream tasks, including classification, for maximum performance.
-
-Utilize all the LIGO data. Events are exceedingly rare, but data is not! Training a foundational model from scratch on LIGO data with an architecture like WHISPER or wav2vec2 allows us to make use of this wealth of information.
-
-
-## Critical Analysis:
-shjdjhd
-- mbdbd
 
 ## Repo:
 
 https://github.com/vanderbilt-data-science/LIGO
 
-## Video Recordings: 
+## Video Recordings:
 
 
 
-## Resources Links: 
+## Resources Links:
 
 [1]	https://gwosc.org/tutorials/
 
@@ -271,6 +269,3 @@ https://github.com/vanderbilt-data-science/LIGO
 
 ## Citations:
 Main Contributors: DSI Vanderbilt Univeristy, Dr. Karan Jani (PI)*, Dr. Chayan Chatterjee (PI)*, Dr. Abbie Petulante (DSI Lead), Albert Hu, Divya Mereddy, Dr. Brandon Soubasis, Stephen Zhao   
-
-
-
