@@ -1,4 +1,4 @@
-# Audio Transformers for LIGO Gravity Wave Classification.
+# Audio Transformers for LIGO Gravity Wave Classification
 ## Introduction:
 
 The Laser Interferometer Gravitational-Wave Observatory (LIGO) is a revolutionary astrophysical observatory designed specifically to detect gravitational waves. These waves are ripples in spacetime caused by violent cosmic events such as the merger of black holes or neutron stars. LIGO's detections provide a novel way to study the universe, complementary to traditional electromagnetic observatories.
@@ -113,7 +113,7 @@ Application to Time Series Data like Gravitational Waves
 
         return P
 
-##### Why need encoder-decoder?
+##### Is encoder-decoder archutecture needed?
         So our initial goal is to achieve classification problem.
         So do we need to why did we consider sequence to sequence model.
         Simple encoder with classification head should be enough.
