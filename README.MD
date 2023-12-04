@@ -1,6 +1,3 @@
-# Check grading and format expect from sheet
-# Check all questions make sure you should be in a position to answer questions.
-
 # Audio Transformers for LIGO Gravity Wave Classification.
 ## Introduction:
 
@@ -8,9 +5,7 @@ The Laser Interferometer Gravitational-Wave Observatory (LIGO) is a revolutionar
 
 ## How LIGO Works:
 
-LIGO (Laser Interferometer Gravitational-Wave Observatory) detects GWs using the interference of laser beams traveling along its long arms.
-
-When GWs pass by Earth, they stretch and squeeze spacetime, differentially changing the lengths of LIGO's arms and thus the laser beam interference pattern at the time of beam recombination.
+LIGO (Laser Interferometer Gravitational-Wave Observatory) detects GWs using the interference of laser beams traveling along its long arms. When GWs pass by Earth, they stretch and squeeze spacetime, differentially changing the lengths of LIGO's arms and thus the laser beam interference pattern at the time of beam recombination.
 
 LIGO's detections provide a new spectrum to astronomy, much like radio and x-rays, opening up a new window into the observing the universe.
 
@@ -22,9 +17,7 @@ LIGO's detections provide a new spectrum to astronomy, much like radio and x-ray
 
 ## Lets explore LIGO data
 
-Determining whether or not a gravity wave signal exists within a clip of signal from the LIGO detector is not a trivial at all.
-
-The gravity wave signal is typically very short, and much smaller in magnitude than noise. In fact, it’s so much smaller that the problem is practically impossible for humans!
+Determining whether or not a gravity wave signal exists within a clip of signal from the LIGO detector is not a trivial at all. The gravity wave signal is typically very short, and much smaller in magnitude than noise. In fact, it’s so much smaller that the problem is practically impossible for humans!
 
 #### Lets play a game to understand LIGO data more.
 
@@ -40,9 +33,7 @@ The gravity wave signal is typically very short, and much smaller in magnitude t
 
 ##### Cosmic Sound?
 
-The interference pattern from LIGO is a frequency-time signal, similar to audio data.
-
-So, we can make use of AI/ML tools developed for audio to understand this data.
+The interference pattern from LIGO is a frequency-time signal, similar to audio data. So, we can make use of AI/ML tools developed for audio to understand this data.
 
 <p align="center">
   <img src="image-13.png" alt="Alt text" width="400">
@@ -65,15 +56,13 @@ Deep Learning based classification models are famous in current stage. In partic
 The success of deep learning models in LIGO can be attributed to their ability to utilize raw waveform data, employ robust architectures like CNNs and transformers, leverage simulation data for pretraining, denoise to reveal weak signals, and integrate multimodal strategies combining AI with signal processing. With more data and improved models, accuracy continues to increase.
 
 Some key advantages of transformers for this application:
-    • Robustness to noisy data.
-    • Prior CNN-based models for GW detection struggled to capture long-range dependencies in the sequential waveform data. Attention mechanisms in transformers are well-suited for modeling these long-range relationships. The transformer encoder consisting of multiple self-attention layers. Allows relating signals across the entire timestep sequence.
-    • Self-attention draws global relationships between all points in the sequence. This is useful for determining phase shifts and time-of-arrival differences critical for GW detection. Multi-head attention can learn diverse patterns.
+    - Robustness to noisy data.
+    - Prior CNN-based models for GW detection struggled to capture long-range dependencies in the sequential waveform data. Attention mechanisms in transformers are well-suited for modeling these long-range relationships. The transformer encoder consisting of multiple self-attention layers. Allows relating signals across the entire timestep sequence.
+    - Self-attention draws global relationships between all points in the sequence. This is useful for determining phase shifts and time-of-arrival differences critical for GW detection. Multi-head attention can learn diverse patterns.
 
-Overall, transformers show promise for gravitational wave detection due to their ability to model complex dependencies in sequential data.
-
-We leverage the power of audio transformers’ deep understanding of audio data to solve our classification problem: does a gravity wave signal exist, or not, in a signal segment?
-    [1] Whipher
-    [2] Wav2vec2
+Overall, transformers show promise for gravitational wave detection due to their ability to model complex dependencies in sequential data.We leverage the power of audio transformers’ deep understanding of audio data to solve our classification problem: does a gravity wave signal exist, or not, in a signal segment?
+    - Whipher
+    - Wav2vec2
 
 ## Whipher:
 
@@ -231,7 +220,7 @@ This is great for our next steps, as it shows that audio model architectures tha
 
 Continue training these models to get the best-possible fine-tuned results. The results shown here are still relatively preliminary, advanced deep learning optimization techniques, new and large training data collection methods(Simulated data) can boost the tuning performance.
 
-Can continue with finetuning (retraining) complete model instead of freezing few layes to boost the performance.
+Can continue with fine tuning (retraining) complete model instead of freezing few layes to boost the performance.
 
 Build a foundational model for LIGO data. A foundational model on LIGO data could be applied to a variety of downstream tasks, including classification, for maximum performance.
 
