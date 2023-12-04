@@ -113,7 +113,7 @@ Application to Time Series Data like Gravitational Waves
 
         return P
 
-##### Is encoder-decoder archutecture needed?
+##### Is encoder-decoder architecture needed?
         So our initial goal is to achieve classification problem.
         So do we need to why did we consider sequence to sequence model.
         Simple encoder with classification head should be enough.
