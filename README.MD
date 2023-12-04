@@ -31,6 +31,8 @@ Determining whether or not a gravity wave signal exists within a clip of signal 
 
 - There are not more events happened till now. But we can create as much data we want to create by adding noise to signal.
 
+Data Card: https://github.com/losc-tutorial/quickview. Here is one of reference we used for LIGO data collection. It includes data sourcing information and data analysis information. Please explore it understand the quality of data.  
+
 ##### Cosmic Sound?
 
 The interference pattern from LIGO is a frequency-time signal, similar to audio data. So, we can make use of AI/ML tools developed for audio to understand this data.
@@ -66,7 +68,7 @@ Overall, transformers show promise for gravitational wave detection due to their
 
 ## Whipher:
 
-What is Whisper?
+##### What is Whisper?
     ASR System: Whisper is an Automatic Speech Recognition system, designed to transcribe spoken language into text.
 Training of Whisper
     Extensive Training Data: Whisper was trained on a massive 680,000 hours of multilingual and multitask supervised data.
@@ -198,6 +200,8 @@ Next Step: Further fine-tune the model tailored to LIGO dataset
 
 ## Code Demonstration
 https://colab.research.google.com/drive/15LSdLoFGJaPlMloXIbw7SCKnwmI6K9xS?authuser=1#scrollTo=ggtNAe8e88bK
+
+##### Code demo: https://colab.research.google.com/drive/15LSdLoFGJaPlMloXIbw7SCKnwmI6K9xS?authuser=1#scrollTo=2v5EHi_K88bK
 
 ## Critical Analysis:
 
