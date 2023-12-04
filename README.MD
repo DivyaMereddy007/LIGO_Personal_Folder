@@ -21,7 +21,7 @@ When GWs pass by Earth, they stretch and squeeze spacetime, differentially chang
 
 LIGO's detections provide a new spectrum to astronomy, much like radio and x-rays, opening up a new window into the observing the universe.
 
-  [<img src="ligo_detector_image-12.png" width="70%" align="center">](https://www.youtube.com/watch?v=aEPIwEJmZyE&t=538s "LIGO")
+  [<img src="ligo_detector_image-12.png" width="70%" >](https://www.youtube.com/watch?v=aEPIwEJmZyE&t=538s "LIGO")
 
 [![Video](https://img.youtube.com/vi/jXnoFqcAkQA/maxresdefault.jpg)](https://www.youtube.com/watch?v=aEPIwEJmZyE)
 
@@ -30,6 +30,12 @@ LIGO's detections provide a new spectrum to astronomy, much like radio and x-ray
 </p>
 
 ## Lets explore LIGO data 
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=aEPIwEJmZyE&t=538s" title="LIGO">
+    <img src="ligo_detector_image-12.png" width="70%">
+  </a>
+</p>
 
 Determining whether or not a gravity wave signal exists within a clip of signal from the LIGO detector is not a trivial at all.
 
