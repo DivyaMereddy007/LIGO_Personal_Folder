@@ -235,7 +235,9 @@ https://github.com/vanderbilt-data-science/LIGO
 
 ## Video Recordings:
 
-https://github.com/DivyaMereddy007/LIGO_Personal_Folder/blob/main/Project_Demo.mp4
+https://drive.google.com/drive/u/1/folders/1U6RPhjcFRqCCady0wscDpAYb1IHr4zoZ
+
+please request access if anyone wants to visit the code demonstration part as well.
 
 ## Resources Links:
 
