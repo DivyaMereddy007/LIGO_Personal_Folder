@@ -30,7 +30,7 @@ The gravity wave signal is typically very short, and much smaller in magnitude t
 
 <p align="center">
   <a href="https://blackholehunter.org/game.html" title="LIGO">
-    <img src="image-12.png" width="30%">
+    <img src="image-12.png" width="50%">
   </a>
 </p>
 
