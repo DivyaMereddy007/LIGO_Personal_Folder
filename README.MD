@@ -183,7 +183,6 @@ Wav2Vec2 is a self-supervised learning model that excels in speech recognition a
 
         return P
 
-
 ###### Results
 
 Our latest LIGO training on the DGX system has produced some promising results:
