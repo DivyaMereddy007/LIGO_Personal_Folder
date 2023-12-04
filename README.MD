@@ -202,7 +202,7 @@ Next Step: Further fine-tune the model tailored to LIGO dataset
 ## Code Demonstration
 https://colab.research.google.com/drive/15LSdLoFGJaPlMloXIbw7SCKnwmI6K9xS?authuser=1#scrollTo=ggtNAe8e88bK
 
-##### Code demo: https://colab.research.google.com/drive/15LSdLoFGJaPlMloXIbw7SCKnwmI6K9xS?authuser=1#scrollTo=2v5EHi_K88bK
+##### gradio demonstration: https://6da95f585fa65e9fdc.gradio.live
 
 ## Critical Analysis:
 
