@@ -230,7 +230,7 @@ https://github.com/vanderbilt-data-science/LIGO
 
 ## Video Recordings:
 
-
+https://github.com/vanderbilt-data-science/LIGO
 
 ## Resources Links:
 
