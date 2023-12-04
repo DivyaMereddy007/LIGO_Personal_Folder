@@ -13,11 +13,6 @@
 
 The Laser Interferometer Gravitational-Wave Observatory (LIGO) is a revolutionary astrophysical observatory designed specifically to detect gravitational waves. These waves are ripples in spacetime caused by violent cosmic events such as the merger of black holes or neutron stars. LIGO's detections provide a novel way to study the universe, complementary to traditional electromagnetic observatories.
 
-![Alt text](image-1.png)
-<p align="center">
-  <img src="image-2.png" alt="Alt text" width="600" height>
-</p>
-
 ## How LIGO Works:
 
 LIGO (Laser Interferometer Gravitational-Wave Observatory) detects GWs using the interference of laser beams traveling along its long arms.
@@ -25,10 +20,12 @@ LIGO (Laser Interferometer Gravitational-Wave Observatory) detects GWs using the
 When GWs pass by Earth, they stretch and squeeze spacetime, differentially changing the lengths of LIGO's arms and thus the laser beam interference pattern at the time of beam recombination.
 
 LIGO's detections provide a new spectrum to astronomy, much like radio and x-rays, opening up a new window into the observing the universe.
+[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
 
+[![Video](https://img.youtube.com/vi/jXnoFqcAkQA/maxresdefault.jpg)](https://www.youtube.com/watch?v=jXnoFqcAkQA)
 
 <p align="center">
-  <img src="![Alt text](image-2.png)" alt="Alt text" width="600">
+  <img src="ligo_detector_image-12.png" alt="Alt text" width="600" height>
 </p>
 
 ## Lets explore LIGO data 
@@ -39,7 +36,7 @@ The gravity wave signal is typically very short, and much smaller in magnitude t
 
 #### Lets play a game to understand LIGO data more. 
 
-https://blackholehunter.org/game.html
+    https://blackholehunter.org/game.html
 
 <p align="center">
   <img src="image-5.png" alt="Alt text" width="700" >
