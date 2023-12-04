@@ -200,6 +200,7 @@ Wav2Vec2 is a self-supervised learning model that excels in speech recognition a
                
         
 ###### Results
+
 Our latest LIGO training on the DGX system has produced some promising results:
 Steadily decrease in training loss as epochs iterate
        -   Test Accuracy: 74%
@@ -213,7 +214,7 @@ Next Step: Further fine-tune the model tailored to LIGO dataset
 
 
 ## Code Demonstration
-https://colab.research.google.com/drive/1P1WGhn-EhVT1YC5W74A1fM-jqV0s5J9l
+https://colab.research.google.com/drive/15LSdLoFGJaPlMloXIbw7SCKnwmI6K9xS?authuser=1#scrollTo=ggtNAe8e88bK
 
 <p align="center">
   <img src="image-6.png" alt="Alt text" width="500">
