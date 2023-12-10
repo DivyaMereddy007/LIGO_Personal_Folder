@@ -31,7 +31,7 @@ Determining whether or not a gravity wave signal exists within a clip of signal 
 
 - There are not more events happened till now. But we can create as much data we want to create by adding noise to signal.
 
-Data Card: https://github.com/losc-tutorial/quickview. Here is one of reference we used for LIGO data collection. It includes data sourcing information and data analysis information. Please explore it understand the quality of data.  
+Data reference (Like Data Card): https://github.com/losc-tutorial/quickview. Here is one of reference we used for LIGO data collection. It includes data sourcing information and data analysis information. Please explore it understand the quality of data.  
 
 ##### Cosmic Sound?
 
